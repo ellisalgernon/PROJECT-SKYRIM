@@ -4,86 +4,49 @@
 ---
 
 <h3 align="center">
-   <a href="https://discord.gg/qEfeWVjDgJ/](https://discord.gg/hBMst84gUp)><img alt="Discord"src="https://www.freepnglogos.com/uploads/discord-logo-png/discord-logo-logodownload-download-logotipos-1.png" width="50" height="50"></a> ︱
+<a href="https://discord.gg/hBMst84gUp"><img alt="Discord"src="https://www.freepnglogos.com/uploads/discord-logo-png/discord-logo-logodownload-download-logotipos-1.png" width="50" height="50"></a> ︱
 <a href="https://www.nexusmods.com/skyrimspecialedition/mods/76466"><img alt="Nexus" src="https://raw.githubusercontent.com/github/explore/781dbc058383a2ee8259ebbab057292f16172d5e/topics/nexus-mods/nexus-mods.png" width="50" height="50"></a> ︱
 <a href="https://www.patreon.com/charolas?utm_medium=clipboard_copy&utm_source=copyLink&utm_campaign=creatorshare_creator"><img alt="Patreon" src="https://decentered.co.uk/wp-content/uploads/2019/12/patreon-logo-png-badge-7.png" width="50" height="50"></a>
 </h3>
 <hr>
-
-
-
-- [PROJECT SKYRIM](#project-skyrim)
-  - [Preamble](#preamble)
-  - [System Requirements](#system-requirements)
-    - [Minimum Specs](#minimum-specs)
-    - [Recommended Specs](#recommended-specs)
-    - [Pagefile Configuration](#pagefile-configuration)
-  - [Installation](#installation)
-     - [Pre-Installation](#pre-installation)
-       - [Installing Microsoft Visual C++ Redistributable Package](#installing-microsoft-visual-c-redistributable-package)
-       - [Installing Microsoft .NET 5.0](#installing-microsoft-net-50)
-       - [Websites & Programs](#websites--programs)
-       - [Clean Skyrim](#clean-skyrim)
-       - [Start Skyrim](#start-skyrim)
-       - [Steam Library](#steam-library)
-       - [Set the Game Language to English](#set-the-game-language-to-english)
-       - [Download & INIs](#download--inis)
-     - [Wabbajack Installation](#wabbajack-installation)
-  - [Starting The Game](#starting-the-game)
-  - [Noteworthy Mods](#noteworthy-mods)
-      - [Combat Overhauls](#combat-overhauls)
-      - [Playstyle Overhauls](#playstyle-overhauls)
-      - [Immersive & Survival Overhauls](immersive-survival-overhauls)
-      - [Quests](#quests)
    
-### [Discord](https://discord.gg/hBMst84gUp) | [Download](https://www.nexusmods.com/skyrimspecialedition/mods/76466)  
-You need a profile picture on your discord account to join the server  
+## Preamble
 
-# Preamble
+**PROJECT Skyrim** is a content-rich, <ins>gameplay-focused</ins> modlist that enhances Skyrim through expansions, overhauls, and thoughtful adjustments to existing systems and features. It aims to create the most diverse experience by incorporating gameplay improvements, world-space additions, new quests, and more. </div>
 
-**PROJECT SKYRIM** is a modlist that is content and gameplay oriented, ***focusing on expansions, overhauls, and healthy adjustments to the systems and features that exist in Skyrim***, while expanding to become the most diverse. It focuses on gameplay, world space add-ons, quests, etc. 
+Additionally, **PROJECT Skyrim** includes <ins>optional, unintrusive adult content</ins>. No NSFW content will appear in your game unless you actively choose to engage with it. However, this means you must be of legal age in your country of residence to play **PROJECT Skyrim**; it is your responsibility to be aware of your country's age requirements.
 
-**PROJECT SKYRIM** also comes with an adult content addon, that is completely unintrusive.
+> You will need to download some mods from LoverLabs as part of the installation process.
 
-**`Which means that nothing will appear on your face without you wishing for it to happen, you can completely ignore, however, you must be of legal age to play PROJECT Skyrim, that is 18 in some countries and 21 in others, is up to you to know your country age requirements.`**
+## System Requirements
+### **Recommended Hardware Specs**
+* VRAM
+  * 8 GB 
+* RAM
+  * 32 GB
 
-**`You still need to download mods from Loverlabs for installation process`**
+### **Performance Presets**
+There are three versions of the Skyrim `.ini` configuration files vailable on Nexus; low, medium, and high.
 
+There is only a small difference between them in terms of visuals (texture resolution remains the same), but choosing a more performance-friendly may get you more FPS.
 
+Settings will change dynamically based on in-game conditions thanks to an SKSE plugin.
 
+You can set the game resolution in `SkyrimPrefs.ini`; if your system is struggling, you can decrease the resolution, the game will be scaled up to fullscreen by default. 
 
-# System Requirements
+> The **PROJECT Skyrim** `.ini` files are located at `%ProjectSkyrimLocation%\profiles\Default`. 
 
-With the performance mode options being available, exact minimum requirements is hard to nail down, you may need to change INI files with lower systems.
+### Disk Space Requirements
+* Disk Space [as of version 0.9.1.x]:
+  *  10 GB for the WJ PS file from Nexus
+  * 265 GB for the mod downloads
+  * 435 GB for the installation folder
+  *  40 GB for the page file
+  *  ...so a total of 750 GB
 
+> During the installatin process, as archives get unpacked and files moved around, there will be some *temporary* overhead space needed.
 
-### **Minimum Specs**
-| CPU        | GPU   |  RAM  | Performance|
-| ------------- |:-------------:| :-----:| :-----:|
-| Ryzen 5 3600      | Nvidia GTX 1080 | 16GB RAM DDR4 | 40 FPS |
-
-
-
-
-### **Recommended Specs**
-| CPU        | GPU   |  RAM  | Performance|
-| ------------- |:-------------:| :-----:| :-----:|
-| Ryzen 5 5600x      | RTX 3070 TI | 32GB RAM DDR4 | 60 FPS |
-
-An Internal SSD is *REQUIRED*.
-Project Skyrim must be installed to an SSD. You *cannot* use a HDD or an external drive to play Project Skyrim.  
-Your Graphics Card (GPU) *MUST* have at least 8GB of VRAM to avoid any issues.
-
-**You also need**
-- ~410GB for Install 
-- ~250GB for Download (This can be on a seperate drive)
-- 40GB for pagefile
-- Around ~80GB of additional free space during the install (This will be freed up after installation haas completed)
-
-**Notes**
-- There is very low difference between High and Medium in terms of visuals, but you can get more FPS. 
-- All inis will change and vary depending on the specific area you are on game due to SKSE Plugins that will cover it for more FPS
-- You can change the resolution in the SkyrimPrefs.ini (make sure to use the ini used by the Mod Organizer that is installed during the Wabajack installation. It should be located at ProjectSkyrim\profiles\Default). If you need more frames you can always decrease the resolution, it will be scaled up to fullscreen by default.
+**PROJECT Skyrim** must be installed on an <ins>**internal SSD**</ins>. You <ins>**cannot**</ins> use an HDD or an external drive of any kind.  
 
 ## Pagefile Configuration
   1. Press **Windows + R** on your keyboard
