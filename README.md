@@ -14,13 +14,15 @@
 
 # 1 Introduction
 
-**PROJECT Skyrim** is a content-rich, <ins>gameplay-focused</ins> modlist that aims to enhance the Skyrim experience through expansions, overhauls, and thoughtful adjustments to existing systems and features. It is designed to be played in __3rd person POV__.
+**PROJECT Skyrim** is a content-rich, <ins>gameplay-focused</ins> modlist that aims to enhance the Skyrim experience through expansions, overhauls, and thoughtful adjustments to existing systems and features. It is designed to be played in <ins>3rd person POV</ins>.
 
 Additionally, **PROJECT Skyrim** includes <ins>optional, unintrusive adult content</ins>. No NSFW content will appear in your game unless you actively choose to engage with it.
 
 > However, this means you must be of legal age in your country of residence to play **PROJECT Skyrim**; it is your responsibility to be aware of your country's age requirements.
 
-Project Skyrim requires the latest version of **Skyrim Special Edition (SSE)** from Steam. You do not need - but *can* have - Anniversary Edition (AE). The **free Creation Club (CC) content** is required; it is no problem if you own/have installed paid CC content, as well, it will just not be used in this mod list.
+Project Skyrim requires the latest version of **Skyrim Special Edition (SSE)** from Steam. 
+
+> You do not need - but *can* have - Anniversary Edition (AE). The **free Creation Club (CC) content** is required; it is no problem if you own/have installed paid CC content, as well, it will just not be used in this mod list.
 
 # 2 System Requirements
 ## 2.1 Recommended Hardware Specs
@@ -51,15 +53,15 @@ There are three versions of the Skyrim `.ini` configuration files available on N
    *  40 GB for the page file
 *  ...**so a total of 760 GB**
 
-During the installation process, as archives get unpacked and files moved around, there will be some *temporary* overhead space needed. As much as 30GB has been reported.
+> During the installation process, as archives get unpacked and files moved around, there will be some *temporary* overhead space needed. As much as 30GB has been reported. Keep in mind that you should avoid filling your drives to full capacity. For optimal performance and system stability, it is generally recommended to maintain at least 10–15% of free space.
 
-Keep in mind that you should avoid filling your drives to full capacity. For optimal performance and system stability, it is generally recommended to maintain at least 10–15% of free space.
+**PROJECT Skyrim** must be installed on an <ins>**internal SSD**</ins>, it <ins>**cannot**</ins> be installed on an HDD or an external drive of any kind.
 
-> **PROJECT Skyrim** must be installed on an <ins>**internal SSD**</ins>, it <ins>**cannot**</ins> be installed on an HDD or an external drive of any kind.
+> While a USB 3.2 external SSD may match or exceed a slower internal SSD in throughput, the key difference is how Windows handles the device. An internal SSD is connected directly via SATA or NVMe and exposed as a local NTFS volume. This gives consistent, low-latency access that MO’s virtual filesystem and SKSE plugins require. An external SSD sits behind a USB controller, adding latency on every file operation and presenting the device differently to the operating system.
 
-Your <ins>**downloads**</ins> can be stored on a different drive than the installation — this can even be an HDD. However, network and OneDrive locations are not supported.
+Your <ins>**downloads**</ins> can be stored on a different drive than the installation — this can even be an HDD. Network and OneDrive locations are not supported for this purpose, either.
 
-Once installation is complete, the downloads folder can technically be deleted. However, it is recommended to keep them on an external drive if you are low on space, as they will be needed again when updating to a new version. Repairing the installation (by re-running it via WJ) only requires the downloads for any broken mods.
+> Once installation is complete, the downloads folder can technically be deleted. However, it is recommended to keep them on an external drive if you are low on space, as they will be needed again when updating to a new version. Repairing the installation (by re-running it via WJ) only requires the downloads for any broken mods.
 
 ## 2.3 Other
 * **Windows**
@@ -115,7 +117,7 @@ Set the game language to English - this is <ins>mandatory</ins> for installation
 * Navigate to the "*Language*" tab.
 * Select "*English*" from the dropdown menu.
 
-Once the modlist installation is complete, any changes to your Steam Skyrim installation will not affect **PROJECT Skyrim** — it is a self-contained instance. This also means you can have multiple WJ modlists installed simultaneously, though they __**cannot be merged**__.
+> Once the modlist installation is complete, any changes to your Steam Skyrim installation will not affect **PROJECT Skyrim** — it is a self-contained instance. This also means you can have multiple WJ modlists installed simultaneously, though they __**cannot be merged**__.
 
 # 3 Pre-Installation Preparations
 ## 3.1 Pagefile Configuration
@@ -126,10 +128,11 @@ Once the modlist installation is complete, any changes to your Steam Skyrim inst
 * Select the "*Advanced*" tab at the top .
 * In the "*Virtual memory*" section, press "*Change...*".
 * Disable "*Automatically manage paging file size for all drives*".
-* Select the drive that PROJECT Skyrim is installed on, and select "*Custom size:*".
+* Select ideally the fastest drive that PROJECT Skyrim is <ins>not</ins> installed on (to avoid bottlenecking, but any internal SSD will do) and select "*Custom size:*".
 * Set a mininum **and** maximum size of `40960 MB`.
 * Click "*Set*" and "*OK*".
 * Press "*Yes*" when prompted to reboot your computer.
+
 > This is <ins>NOT OPTIONAL</ins>, you cannot skip this step no matter how big your RAM is.
 
 ### PROJEKT Skyrim version [0.9.1.x]
@@ -145,7 +148,7 @@ For PS version [0.9.1.x], Creation Kit is <ins>no longer required</ins>.
 # 4 Installing the Modlist via Wabbajack
 Make sure you have performed all the steps above <ins>before</ins> continuing with the installation! 
 
-> Check that you have .NET framework 4.8, 8, and 9 as well as the latest VS C++ runtime installed as mentioned above in section 2.3! 
+> When **<ins>updating</ins>** the modlist, the steps are the same as for installing it the first time. Due to a rare bug with WJ, it is however recommended to start out with an <ins>empty</ins> installation folder (caveat: any manually made changes will be lost this way). You may retain your downloads folder - just keep in mind that unused downloads are not cleared out automatically, so eventually you will end up with a lot of wasted space.
 
 ## 4.1 Create Folders
 Create three new folders at (or close to) the root of your drive:
@@ -153,7 +156,9 @@ Create three new folders at (or close to) the root of your drive:
 * `Wabbajack`
 * `Wabbajack Downloads`
 
-> <ins>Do not</ins> put your downloads folder **inside** the installation folder, even if WJ suggests this automatically!
+WJ will delete <ins>everything</ins> in the installation folder - including itself - that it does not expect to be there! 
+
+> The downloads folder is theoretically exempt from this - but to be on the safe side, do **not** put it inside the installation folder, even if WJ suggests this automatically.
 
 ![unknown (1)](https://user-images.githubusercontent.com/116535023/197645646-cdc7d058-43c0-403f-80cb-038ea317f0cb.png)
 
@@ -171,7 +176,7 @@ Download the **PROJECT Skyrim Wabbajack files** and the **ini files** **[here](h
 Then extract the `PROJECT Skyrim x.x.x.x.zip` file.
 * It will contain:
   * `PROJECT SKYRIM.wabbajack`
-  * `PROJECT SKYRIM.wabbajack.meta.json`
+  * `PROJECT SKYRIM.wabbajack.meta.json` (optional)
 
 ## 4.4 Run Wabbajack
 Open `Wabbajack.exe` in your "*Wabbajack*" folder. 
@@ -240,7 +245,7 @@ Our community has compiled a list of mods that often give users trouble. Join th
 If you are still having issues, join our **[Discord](https://discord.gg/hBMst84gUp)** server and check out the <ins>*faq-installation*</ins> and the <ins>*installation support channel*</ins>.
 
 ## 4.6 INI files
-Now choose the correct `.ini` files for your setup: Extract the .zip archive with the `.ini` files you downloaded from Nexus; go to the subfolder with your screen's native resolution, and then choose a performance preset.
+Now choose the correct `.ini` files for your setup: Extract the .zip archive with the `.ini` files you downloaded from Nexus; go to the subfolder with your screen's native resolution (note: ultra-widescreen resolution will require additional patches to be activated, see "Optional Mods and Modifications"), and then choose a performance preset.
 
 Copy the three files contained within to `%ProjectSkyrimLocation%\profiles\Default`, overwriting the existing files:
 * `Skyrim.ini`
@@ -288,17 +293,18 @@ For more details, visit the *modify support* channel on our Discord server. Howe
 # 5 Launching the Game
 You can now launch **PROJECT Skyrim** from Mod Organizer by clicking the "*Run*" button at the top right; make sure the `SKSE` executable is selected from the dropdown menu. 
 
+> Before getting started, check out the **sticky posts** in the support channels on discord for known bug fixes, some of which may require a new game.
+
 The first boot might take a while to get going, so be patient; 5+ minutes are normal.
 
-> On your first launch, a pop-up may appear prompting you to log into Bethesda.net and download the creations - press `ok` and then `esc` to back out of it, no need to download anything.
+> On your first launch, a pop-up may appear prompting you to log into Bethesda.net and download the creations - press `ok` and then `esc` to back out of it, do not download anything.
 
 ## 5.1 Starting a New Game
-
-> You <ins>cannot</ins> reuse any old saves from vanilla Skyrim or other modlists, and even updated versions of the same modlist are often not "save safe".
-
 When starting a new game, you will first be stuck staring at Helgen for a while.
 
-> Be patient, you must wait here for about 5 minutes (until the "Museum" pop-up appears) in order to allow all scripts and other content to load. This is <ins>not</ins> optional.
+Be patient, you must wait here for about 5 minutes (until the "Museum" pop-up appears) in order to allow all scripts and other content to load. This is <ins>not</ins> optional.
+
+> You <ins>cannot</ins> reuse any old saves from vanilla Skyrim or other modlists, and even updated versions of the same modlist are often not "save safe".
 
 ![Screenshot 2025-04-17 204125](https://github.com/user-attachments/assets/da003fc7-86b6-448c-8b60-85da95b9fbc0)
 
@@ -308,8 +314,6 @@ After closing the pop-up, to begin the game:
   * It is recommened you do not touch the dragon timer, however anything else can be changed to your liking.
 
 Once you are finished, click "*Begin Adventure*", you will now be moved to character creation.
-
-> Before getting started, check out the **sticky posts** in the support channels on discord for known bug fixes, some of which may require a new game.
 
 # 6 Final Things
 Skyrim's script engine struggles already when dealing with a vanilla game - in a modded experience, any little instability becomes magnified. Therefore: Do not change cells multiple times in quick succession, give scripts a chance to <ins>**catch up**</ins>.
@@ -321,13 +325,13 @@ To avoid save game corruption, follow these guidelines for **safe saving practic
  
 * Never <ins>**quicksave**</ins> (even if you have the ability to do so, and definitely don't turn it back on if it's off).
 * Never <ins>**reload**</ins> in game - quit to desktop and boot up the game fresh if you want to load a different save.
-* Never <ins>**overwrite**</ins> a save, new saves only.
+* Never <ins>**overwrite**</ins>, new saves only - redundancy is your friend.
 * Do not save during <ins>**script-heavy**</ins> moments, such as:
   * during or immediately after combat
   * moving at high speeds
   * immediately after changing cells (better *before* changing cells)
   * during dialogue, crafting, photo mode
-  * during animations
+  * during scripted scenes
 
 ## 6.2 Death Alternatives
 Keep a <ins>**death alternative**</ins> enabled to prevent reloads on death.
@@ -335,7 +339,7 @@ Keep a <ins>**death alternative**</ins> enabled to prevent reloads on death.
 ### PROJEKT Skyrim version [0.9.0.x]
 * `Stay in the Fight`
 
-"*Stay in the Fight*" is currently bugged and must be disabled and re-enabled via its MCM:
+"*Stay in the Fight*" is currently bugged and must be disabled and re-enabled via its MCM when you start a new game:
 * Go to the "*Stay in the Fight*" MCM, find "*Pact with the Gods*" and disable it.
 * Close the menu completely.
 * Go back to the MCM and re-enable "*Pact with the Gods*".
