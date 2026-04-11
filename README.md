@@ -36,20 +36,12 @@ There are three versions of the Skyrim `.ini` configuration files available on N
 
 ## 2.3 Disk Space Requirements
 ### PROJEKT Skyrim version [0.9.0.x]
-* Disk Space as of PS version [0.9.0.7]:
+* Disk Space as of PS version [0.9.0.8]:
    *  10 GB for the WJ PS file from Nexus
-   * 220 GB for the mod downloads
-   * 350 GB for the installation folder
+   * 225 GB for the mod downloads
+   * 375 GB for the installation folder
    *  40 GB for the page file
-*  ...**so a total of 620 GB**
-
-### PROJEKT Skyrim version [0.9.1.x]
-* Disk Space as of PS version [0.9.1.9]:
-   *  10 GB for the WJ PS file from Nexus
-   * 265 GB for the mod downloads
-   * 445 GB for the installation folder
-   *  40 GB for the page file
-*  ...**so a total of 760 GB**
+*  ...**so a total of 640 GB**
 
 During the installation process, as archives get unpacked and files moved around, there will be some *temporary* overhead space needed. As much as 30GB has been reported.
 
@@ -132,15 +124,9 @@ Once the modlist installation is complete, any changes to your Steam Skyrim inst
 * Press "*Yes*" when prompted to reboot your computer.
 > This is <ins>NOT OPTIONAL</ins>, you cannot skip this step no matter how big your RAM is.
 
-### PROJEKT Skyrim version [0.9.1.x]
-* As of version [0.9.1.x], the page file will be configured for you automatically towards the end of the installation process (40 GB).
-
 ## 3.2 Install SSE Creation Kit (Steam)
 ### PROJEKT Skyrim version [0.9.0.x]
 For PS version [0.9.0.7], Creation Kit is <ins>no longer required</ins>.
-
-### PROJEKT Skyrim version [0.9.1.x]
-For PS version [0.9.1.x], Creation Kit is <ins>no longer required</ins>.
 
 # 4 Installing the Modlist via Wabbajack
 Make sure you have performed all the steps above <ins>before</ins> continuing with the installation! 
@@ -247,33 +233,6 @@ Copy the three files contained within to `%ProjectSkyrimLocation%\profiles\Defau
 * `SkyrimCustom.ini`
 * `SkyrimPrefs.ini`
 
-## 4.7 ENB Frame Generation
-### PROJEKT Skyrim version [0.9.0.x]
-Below version [0.9.1.x], PROJECT Skyrim does not come with built-in frame generation.
-
-### PROJEKT Skyrim version [0.9.1.x]
-Starting from version [0.9.1.x], ENB Frame Generation is active by default. 
-
-* If your monitor has a **refresh rate of <ins>120 Hz or above**</ins>:
-  * No additional action on your part is required.
-* If your monitor has a **refresh rate of <ins>less than 120 Hz**</ins>:
-  * Frame generation may still work for you if you force enable it in the <ins>in-game ENB</ins> options:
-    * Press `L-Shift + Enter` to open the ENB GUI.
-    * In the top left pane, expand the `Performance` section.
-    * Enable the option `Force Enable Frame Generation`.
-    * Click `Save and Apply Changes` at the top of the pane.
-    * Press `L-Shift + Enter` to close the ENB GUI.
-    * May require a game reboot to take effect.
-    * ![Screenshot 2025-04-17 234042](https://github.com/user-attachments/assets/f3536493-b186-4bab-93f7-eeef6d60f394)
-  * If this does not work for you, disable Frame Generation in Mod Organizer:
-    * Go to the separator `ENB Frame Generation and Display Tweaks Settings - ONLY FOR 120HZ or above` (use the search filter if you cannot find it).
-    * disable:
-      * `ENB Frame Generation` and
-      * `DisplayTweaks settings for Frame Generation (CS or ENB)`
-      * ![image](https://github.com/user-attachments/assets/23fa558c-8a82-49dc-87ef-edf20fbec9f5)
-
-> If you experience noticeable <ins>**input lag**</ins> while using Frame Generation at lower frame rates, you may want to turn it off. It works best when the game runs at a steady 60 FPS and is interpolated up to 120 FPS.
-
 ## 4.7 Optional Mods and Modifications
 In MO you will notice a separator called `Optional Packages`, under which you will find mods that are not enabled by default. If you want to use any of them: Enable them, and check for errors (triangle in top right of MO) in case you missed any that need to be activated together. Then go to `tools -> plugin tools -> sync plugins` to send the newly enabled plugins to the appropriate spot in the load order.
 
@@ -332,20 +291,10 @@ To avoid save game corruption, follow these guidelines for **safe saving practic
 ## 6.2 Death Alternatives
 Keep a <ins>**death alternative**</ins> enabled to prevent reloads on death.
 
-### PROJEKT Skyrim version [0.9.0.x]
-* `Stay in the Fight`
-
-"*Stay in the Fight*" is currently bugged and must be disabled and re-enabled via its MCM:
-* Go to the "*Stay in the Fight*" MCM, find "*Pact with the Gods*" and disable it.
-* Close the menu completely.
-* Go back to the MCM and re-enable "*Pact with the Gods*".
-
-> If you do not do this, your game will crash when you die, and/or your save will get corrupted!
-
-### PROJEKT Skyrim version [0.9.1.x]
+### PROJEKT Skyrim version [0.9.0.8]
 * `Soul Resurrection`
 
-Works as intended out of the box.
+> If you disable this, your game will crash when you die, and/or your save will get corrupted!
 
 # 7 Discord
 For additional information and support, we invite you to join our **[Discord](https://discord.gg/hBMst84gUp)** server. There, you will find <ins>FAQs</ins> addressing common questions, <ins>support</ins> channels for assistance with installation, gameplay, and modifications, as well as sticky posts with the <ins>latest important information</ins>.
