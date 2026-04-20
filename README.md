@@ -4,13 +4,14 @@
 
 ---
 
-<h3 align="center">
-<a href="https://discord.gg/hBMst84gUp"><img alt="Discord"src="https://www.freepnglogos.com/uploads/discord-logo-png/discord-logo-logodownload-download-logotipos-1.png" width="50" height="50"></a> ︱
-<a href="https://www.nexusmods.com/skyrimspecialedition/mods/76466"><img alt="Nexus" src="https://raw.githubusercontent.com/github/explore/781dbc058383a2ee8259ebbab057292f16172d5e/topics/nexus-mods/nexus-mods.png" width="50" height="50"></a> ︱
-<a href="https://www.patreon.com/charolas?utm_medium=clipboard_copy&utm_source=copyLink&utm_campaign=creatorshare_creator"><img alt="Patreon" src="https://decentered.co.uk/wp-content/uploads/2019/12/patreon-logo-png-badge-7.png" width="50" height="50"></a> ︱
-<a href="https://ko-fi.com/charolas"><img alt="ko-fi" src="https://github.com/user-attachments/assets/60c1eebc-67dc-411d-88cf-32cbdffc80f2" width="50" height="50"></a>
-</h3>
-<hr>
+<p align="center">
+  <a href="https://discord.gg/hBMst84gUp"><img alt="Discord" src="https://www.freepnglogos.com/uploads/discord-logo-png/discord-logo-logodownload-download-logotipos-1.png" width="50"></a> |
+  <a href="https://www.nexusmods.com/skyrimspecialedition/mods/76466"><img alt="Nexus" src="https://raw.githubusercontent.com/github/explore/781dbc058383a2ee8259ebbab057292f16172d5e/topics/nexus-mods/nexus-mods.png" width="50"></a> |
+  <a href="https://www.patreon.com/charolas?utm_medium=clipboard_copy&utm_source=copyLink&utm_campaign=creatorshare_creator"><img alt="Patreon" src="https://decentered.co.uk/wp-content/uploads/2019/12/patreon-logo-png-badge-7.png" width="50"></a> |
+  <a href="https://ko-fi.com/charolas"><img alt="Ko-fi" src="https://github.com/user-attachments/assets/60c1eebc-67dc-411d-88cf-32cbdffc80f2" width="50"></a>
+</p>
+
+---
 
 # 1 Introduction
 
@@ -39,9 +40,9 @@ There are three versions of the Skyrim `.ini` configuration files available on N
 * Disk Space as of PS version [0.9.0.8]:
    *  10 GB for the WJ PS file from Nexus
    * 225 GB for the mod downloads
-   * 375 GB for the installation folder
+   * 390 GB for the installation folder
    *  40 GB for the page file
-*  ...**so a total of 640 GB**
+*  ...**so a total of 665 GB**
 
 During the installation process, as archives get unpacked and files moved around, there will be some *temporary* overhead space needed. As much as 30GB has been reported.
 
@@ -82,12 +83,15 @@ Once installation is complete, the downloads folder can technically be deleted. 
   * Wabbajack does not support pirated copies of the game, and neither do we.
 * **[Nexus Account](https://www.nexusmods.com/)**
   * Premium recommended for automated downloads and higher download speed. Otherwise, be prepared to click "*manual download*" 5k times.
-* **[LoversLab Account](https://www.loverslab.com/)**
-  * You no longer need to log into LoversLab in Wabbajack *before* the installation, you will be prompted *during*, instead.
+* **~~[LoversLab Account](https://www.loverslab.com/)**~~
+  * ~~You no longer need to log into LoversLab in Wabbajack *before* the installation, you will be prompted *during*, instead.~~
+  * `No longer required as of v0.9.0.8.`
 * **~~[VectorPlexus Account](https://vectorplexis.com/)~~** 
-  * ~~VectorPlexus is permanently down, please join the Discord to acquire any missing mods from the backup links.~~ `no longer required from v0.9.0.7 upwards, site is dead`
-* **[Mega Account](https://mega.io/)**
-  * Required for some files not hosted on Nexus. `no longer required for v0.9.1.x`
+  * ~~VectorPlexus is permanently down, please join the Discord to acquire any missing mods from the backup links.~~
+  * `No longer required as of v0.9.0.7, site is dead.`
+* ~~**[Mega Account](https://mega.io/)**~~
+  * ~~Required for some files not hosted on Nexus.~~ 
+  * `No longer required - can "log in" anonymously.`
 
 ## 2.4 Vanilla Skyrim Setup
 You will require an up-to-date installation of **[Skyrim Special Edition or Anniversary Edition](https://www.nexusmods.com/skyrimspecialedition)**.
@@ -126,7 +130,7 @@ Once the modlist installation is complete, any changes to your Steam Skyrim inst
 
 ## 3.2 Install SSE Creation Kit (Steam)
 ### PROJEKT Skyrim version [0.9.0.x]
-For PS version [0.9.0.7], Creation Kit is <ins>no longer required</ins>.
+As of PS version [0.9.0.7], Creation Kit is <ins>no longer required</ins>.
 
 # 4 Installing the Modlist via Wabbajack
 Make sure you have performed all the steps above <ins>before</ins> continuing with the installation! 
@@ -157,7 +161,6 @@ Download the **PROJECT Skyrim Wabbajack files** and the **ini files** **[here](h
 Then extract the `PROJECT Skyrim x.x.x.x.zip` file.
 * It will contain:
   * `PROJECT SKYRIM.wabbajack`
-  * `PROJECT SKYRIM.wabbajack.meta.json`
 
 ## 4.4 Run Wabbajack
 Open `Wabbajack.exe` in your "*Wabbajack*" folder. 
